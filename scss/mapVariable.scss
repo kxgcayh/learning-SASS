@@ -1,0 +1,8 @@
+// Simple Object on SASS
+$alert: ('danger': red,
+  'success': green,
+  'warning': orange);
+
+h1 {
+  color: map-get($alert, 'warning')
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAKA,AAAA,EAAE,CAAC;EACD,KAAK,EAHM,MAAM;CAIlB",
+    "sources": [
+        "../scss/mapVariable.scss"
+    ],
+    "names": [],
+    "file": "mapVariable.css"
+}

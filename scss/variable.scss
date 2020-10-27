@@ -1,0 +1,16 @@
+// Global Variable
+$primary-color: lightblue;
+$secondary-color: salmon;
+$text-color: red;
+
+body {
+  // Variable Local
+  $local-color: #f424;
+  background-color: $primary-color;
+}
+
+h1 {
+  // Variable Local moved to global
+  $local-to-global-color: #f424 !global;
+  color: $text-color;
+}
