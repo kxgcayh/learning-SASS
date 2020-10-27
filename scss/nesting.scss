@@ -1,0 +1,22 @@
+// Parent Selector
+.main {
+
+  // Symbol '&' == mengambil parent
+  .container & {
+    // Digunakan untuk menimpa sesuatu
+    background-color: lightblue;
+  }
+
+  // Bisa digunakan juga untuk generate nama parent
+  & &-heading {
+    font-size: 2em;
+  }
+
+  & &-paragraph {
+    font-size: 1.3em;
+  }
+
+  &:hover {
+    background-color: salmon;
+  }
+}

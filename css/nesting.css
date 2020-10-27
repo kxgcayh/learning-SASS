@@ -1,0 +1,16 @@
+.container .main {
+  background-color: lightblue;
+}
+
+.main .main-heading {
+  font-size: 2em;
+}
+
+.main .main-paragraph {
+  font-size: 1.3em;
+}
+
+.main:hover {
+  background-color: salmon;
+}
+/*# sourceMappingURL=nesting.css.map */
