@@ -1,17 +1,10 @@
+// @import 'modules/mixinModules';
+@use 'modules/mixinModules'as mMod;
+// Command = sass scss/mixin.scss css/mixin.css
+
 // Kumpulan style yang dapat digunakan berulang-ulang
-
-@mixin inline-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-
-  li {
-    display: inline-block;
-  }
-}
-
 .mixHeader ul {
-  @include inline-list();
+  @include mMod.inline-list();
 
   li {
     background-color: salmon;
@@ -25,7 +18,7 @@
 }
 
 .mixFooter ul {
-  @include inline-list();
+  @include mMod.inline-list();
 
   li {
     background-color: salmon;
@@ -33,19 +26,10 @@
   }
 }
 
-// Arguments Mixin
-// Set default argument as 'row'
-@mixin flex-box($direction: row, $space: center) {
-  display: flex;
-  justify-content: $space;
-  align-items: center;
-  flex-direction: $direction;
-}
-
 .mixMain {
   .container {
     // flex-box(row-reverse) melempar parameter kedalam mixin $direction
-    @include flex-box(row-reverse, space-between);
+    @include mMod.flex-box(row-reverse, space-between);
     width: 600px;
     height: 400px;
     background-color: grey;

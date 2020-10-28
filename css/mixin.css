@@ -3,16 +3,13 @@
   padding: 0;
   list-style: none;
 }
-
 .mixHeader ul li {
   display: inline-block;
 }
-
 .mixHeader ul li {
   background-color: salmon;
   padding: 0.7em;
 }
-
 .mixHeader ul li a {
   color: yellow;
   text-decoration: none;
@@ -23,35 +20,23 @@
   padding: 0;
   list-style: none;
 }
-
 .mixFooter ul li {
   display: inline-block;
 }
-
 .mixFooter ul li {
   background-color: salmon;
   padding: 0.7em;
 }
 
 .mixMain .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
   width: 600px;
   height: 400px;
   background-color: grey;
 }
-
 .mixMain .container .box {
   width: 60px;
   height: 60px;
@@ -59,4 +44,5 @@
   text-align: center;
   line-height: 60px;
 }
+
 /*# sourceMappingURL=mixin.css.map */
